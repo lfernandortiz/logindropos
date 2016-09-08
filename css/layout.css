@@ -87,7 +87,7 @@ input:focus::-o-input-placeholder {
 }
 
 .container{
-	padding: 4rem 10rem 1rem 10rem;
+	padding: 7rem 10rem 5rem 10rem;
 	display: flex;
 	flex-flow: row;
 	justify-content: space-around;
@@ -287,7 +287,7 @@ input:focus::-o-input-placeholder {
     font-size: .85rem;
     font-style: normal;
     font-weight: 400;
-    font-weight: bold;
+    font-weight: bolder;
     text-decoration: none;
     text-indent: 0;
     text-justify: auto;
@@ -296,7 +296,7 @@ input:focus::-o-input-placeholder {
     /*color: #0032C0;*/
     color: #F4F4F4;
     text-align: center;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 3px  black;
     padding: 0 15px
 }
 
@@ -401,6 +401,8 @@ input:focus::-o-input-placeholder {
 	}
 	.entradasfooter a{
 		font-size: .9rem;
+		color: #0032C0;
+		text-shadow: none;
 		padding-bottom: 1px;		
 	}
 }
