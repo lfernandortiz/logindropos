@@ -382,12 +382,12 @@ input:focus::-o-input-placeholder {
 	}
 	
 	::-webkit-input-placeholder {
-  		 font-size: .8rem;
+  		 font-size: .9rem;
    		color: #B9B9B9;
 	}
 	
 	::-o-input-placeholder {
-   		font-size: .8rem;
+   		font-size: .9rem;
    		color: #B9B9B9;
 	}
 	
@@ -487,12 +487,12 @@ input:focus::-o-input-placeholder {
 	}
 	
 	::-webkit-input-placeholder {
-  		 font-size: .7rem;
+  		 font-size: .8rem;
    		color: #B9B9B9;
 	}
 	
 	::-o-input-placeholder {
-   		font-size: .8rem;
+   		font-size: .9rem;
    		color: #B9B9B9;
 	}
 	
