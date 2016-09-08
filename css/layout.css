@@ -133,10 +133,7 @@ input:focus::-o-input-placeholder {
 
 .containerform{
 	position: relative;
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
-    /*padding: 0 10px 0;*/
-	/*border: 2px solid #7401F5;*/
+    /*border: 2px solid #7401F5;*/
 }
 .formulario{
 	margin: 0 auto;
@@ -257,8 +254,10 @@ input:focus::-o-input-placeholder {
 	margin-top: 10px;
 	text-align: center;
 	margin-bottom: 5px;
-	padding-bottom: 10px;
+	padding: 70px 0 0 0;
+
 }
+
 
 .footerWhite{
 	text-align: center;
@@ -334,7 +333,7 @@ input:focus::-o-input-placeholder {
 
 	.container{
 		display: block;
-		padding: 1rem 2rem 2rem 2rem;
+		padding: 1rem 2rem .9rem 2rem;
 		height: auto;	
 	}
 
@@ -346,10 +345,10 @@ input:focus::-o-input-placeholder {
 
 	.logoheader h1{
 		font-size: 4rem;
-		color: #4D4D4D;
+		/*color: #4D4D4D;*/
 	}
 	.logoheader h5{
-		color: #6C6C6C;
+		/*color: #6C6C6C;*/
 	}
 
 	.formulario{
@@ -387,6 +386,10 @@ input:focus::-o-input-placeholder {
    		color: #B9B9B9;
 	}
 	
+	.footer{
+		padding-top: 30px;
+	}
+
 	.footerWhite{
 		background: none;
 		padding: 50px;
@@ -406,11 +409,11 @@ input:focus::-o-input-placeholder {
 
 @media only screen  and (max-width : 798px){
 	.body{
-		background-image: none;
+		transition: .8s;
+		/*background-image: none;*/
+
 	}
-	.pattern{
-		background-image: none;
-	}
+	
 	.colorazul{		
 		display: flex;	
 		flex-direction: row;	
@@ -442,6 +445,7 @@ input:focus::-o-input-placeholder {
 	}
 
 	.logoheader h1{
+		color: #FFFFFF;
 		font-size: 4rem;
 	}
 
@@ -493,12 +497,16 @@ input:focus::-o-input-placeholder {
 		font-size: .8rem;
 		padding-bottom: 1px;		
 	}
-
 }
 
 
 @media screen and (max-width: 470px) {
-	
+	.body{
+		background: #E6E6E6;
+	}
+	.pattern{
+		background-image: none;
+	}
 	.colorazul{		
 		display: flex;	
 		flex-direction: column;	
@@ -517,6 +525,13 @@ input:focus::-o-input-placeholder {
 	}	
 	.logoheader h1{
 		font-size: .7rem;		
+	}
+	.logoheader h1{
+		font-size: 4rem;
+		color: #4D4D4D;
+	}
+	.logoheader h5{
+		color: #6C6C6C;
 	}
 
 }
@@ -565,6 +580,10 @@ input:focus::-o-input-placeholder {
 		margin-bottom: 6px;
 	}
 
+	.formulario{
+		height: 20rem;
+	}
+
 	input{
 		zoom:1.5;
 	}
@@ -583,7 +602,11 @@ input:focus::-o-input-placeholder {
 		margin-bottom: 10px;
 	}
 	
-	.footer a{
+	.footer{
+		padding-top: 5px;
+	}
+
+	.footer a{		
 		font-size: .7rem;
 	}
 }
