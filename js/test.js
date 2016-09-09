@@ -12,14 +12,12 @@ function inicio(){
 
 function desenfocarFondo(){
 	console.log("desenfocando..");
-
 	if(user.focus()){
 		console.log("si");
 		var fondo = document.getElementById("cb-slideshow");
 		fondo.setAttribute("style", "-webkit-filter: blur(5px)");
 	}else{
 		console.log("no");
-
 	}
 	
 }
