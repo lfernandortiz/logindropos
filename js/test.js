@@ -1,25 +1,42 @@
+//varibles de uso global recibe los elementos de usuario, contraseña, y recordar usuario
 var user;
 var clave;
+var recordar;
+
+//funcion inicial que carga los objetos del DOM  a variables jS.
 function inicio(){
-	console.log("Registrando eventos....");
 	user = document.getElementById('usuario');
-	console.log(user);
-	user.addEventListener("onblur", desenfocarFondo(), false);
 	clave = document.getElementById("contrasenia");
-	clave.addEventListener("onfocus", desenfocarFondo(), false);
-	console.log(clave);
+	recordar = document.getElementById("recordarme");
+	user.addEventListener("click", desenfocarFondo, false);	
+	user.addEventListener("blur", enfocarFondo, false);	
+	clave.addEventListener("click", desenfocarFondo, false);
+	clave.addEventListener("blur", enfocarFondo, false);
+	recordar.addEventListener("click", desenfocarFondo, false);	
 }
 
+
+//Aplica desenfoque al fondo aletorio de imagenes
 function desenfocarFondo(){
-	console.log("desenfocando..");
-	if(user.focus()){
-		console.log("si");
-		var fondo = document.getElementById("cb-slideshow");
-		fondo.setAttribute("style", "-webkit-filter: blur(5px)");
+	var fondo = document.getElementById("cb-slideshow");
+	var evento = window.event.target.id;
+	if(evento == recordar.id){
+		if(recordar.checked){			
+			fondo.setAttribute("style", "-webkit-filter: blur(5px); transition:.9s");
+		}else{
+			enfocarFondo();
+		}
 	}else{
-		console.log("no");
-	}
-	
+		fondo = document.getElementById("cb-slideshow");
+		fondo.setAttribute("style", "-webkit-filter: blur(5px); transition:.9s");
+	}	
 }
 
+//Enfoca en fondo cuando los campos del formulario pierden el foco.
+function enfocarFondo(){
+	var fondo = document.getElementById("cb-slideshow");
+	fondo.setAttribute("style", "-webkit-filter: blur(0) ; transition:.9s");
+}
+
+//Registra los manejadores de eventos de los componentes de la pagina al momet de cargar la pagina
 window.addEventListener("load", inicio, false);
