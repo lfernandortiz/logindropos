@@ -309,6 +309,15 @@ input:focus::-o-input-placeholder {
 		padding: 12rem 20rem 7rem 20rem;
 	}
 
+	.logoheader h1{		
+		color: #FFFFFF;
+		text-shadow: 2px 3px 8px #1C1C1C;	
+	}
+	
+	.logoheader h1:hover{
+		text-shadow: 2px 3px 14px #1C1C1C;	
+	}
+
 }
 
 @media only screen and (min-width : 800px) and (max-width : 1024px){
