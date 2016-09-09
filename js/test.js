@@ -22,13 +22,13 @@ function desenfocarFondo(){
 	var evento = window.event.target.id;
 	if(evento == recordar.id){
 		if(recordar.checked){			
-			fondo.setAttribute("style", "-webkit-filter: blur(5px); transition:.9s");
+			fondo.setAttribute("style", "-webkit-filter: blur(6px); transition:.9s");
 		}else{
 			enfocarFondo();
 		}
 	}else{
 		fondo = document.getElementById("cb-slideshow");
-		fondo.setAttribute("style", "-webkit-filter: blur(5px); transition:.9s");
+		fondo.setAttribute("style", "-webkit-filter: blur(6px); transition:.9s");
 	}	
 }
 
