@@ -1,5 +1,6 @@
 @import url(reset.css);
 @import url(font-awesome.css);
+@import url(style1.css);
 /*@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");*/
 @import 'https://fonts.googleapis.com/css?family=Istok+Web';
 @import 'https://fonts.googleapis.com/css?family=Poppins:400,700';
@@ -8,27 +9,26 @@
 	padding: 0;
 	margin: 0;
 }
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
 
 body{
 	font-size: 16px;
 	font-family: arial,helvetica,sans-serif;
-	background: #E6E6E6;
+	/*background: #E6E6E6;*/
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 .body{
-	background-image: url(../image/background.jpg);	
+	/*background-image: url(../image/background.jpg);	*/
 	background-attachment: fixed;
+	background: #FFFFFF;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-
-.pattern {
-	/*position: relative;*/
-	background-image: url(../image/trama.png);
-	background-repeat: repeat;
-	z-index: 2;		
-}
-
 
 ::-webkit-input-placeholder {
    font-size: .9rem;
@@ -52,7 +52,9 @@ input:focus::-o-input-placeholder {
    color: #FFFFFF;
 }
 
-.header{}
+.header{
+	z-index: 0;
+}
 
 .colorazul{
 	background: #0000FF;
@@ -112,7 +114,7 @@ input:focus::-o-input-placeholder {
 }
 
 .logoheader h1:hover{
-	text-shadow: 2px 2px 5px #363636;	
+	text-shadow: 2px 3px 8px #1C1C1C;	
 }
 
 .logoheader h5{
@@ -123,7 +125,7 @@ input:focus::-o-input-placeholder {
 }
 
 .logoheader h5:hover{
-	text-shadow: 1px 1px 1px #777777;	
+	text-shadow: 1px 2px 6px #2E2E2E;	
 	/*font-weight: bold;*/
 }
 
@@ -258,8 +260,8 @@ input:focus::-o-input-placeholder {
 	text-align: center;
 	/*padding-top: 3rem;*/
 	bottom: 0px;
-    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    height: 100vh;
+    /*background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */*/
+    /*height: 100vh;*/
     /*border: 1px solid #05C900;*/
 }
 
@@ -288,23 +290,33 @@ input:focus::-o-input-placeholder {
     font-size: .85rem;
     font-style: normal;
     font-weight: 400;
-    font-weight: bolder;
+    font-weight: bold;
     text-decoration: none;
     text-indent: 0;
     text-justify: auto;
     text-overflow: clip;
     text-shadow: none;
     /*color: #0032C0;*/
-    color: #F4F4F4;
+    color: #4C4C4C;
     text-align: center;
-    text-shadow: 1px 1px 3px  black;
+    /*text-shadow: 1px 1px 3px  black;*/
     padding: 0 15px
+}
+
+@media only screen and (min-width : 1425px) and (max-width : 1920px){
+	.container{
+		/*border: 3px solid #00ED4E;*/
+		padding: 12rem 20rem 7rem 20rem;
+	}
+
 }
 
 @media only screen and (min-width : 800px) and (max-width : 1024px){
 	.container{
 		padding: 4rem 2.8rem 1rem 2.8rem;
+		/*border: 3px solid #0819F5;*/
 	}
+
 }
 
 
@@ -415,6 +427,8 @@ input:focus::-o-input-placeholder {
 		/*background-image: none;*/
 	}
 
+
+
 	#body{
 
 	}
@@ -513,6 +527,10 @@ input:focus::-o-input-placeholder {
 	.body{
 		background: #E6E6E6;
 		transition: 1s;
+	}
+
+	.cb-slideshow{
+		display: none;
 	}
 
 	.pattern{
