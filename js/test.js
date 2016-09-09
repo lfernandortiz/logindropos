@@ -1,16 +1,27 @@
-
+var user;
+var clave;
 function inicio(){
 	console.log("Registrando eventos....");
-	var user = document.getElementById("usuario");
-	user.addEventListener("focus", desenfocarFondo(), false);
-	var clave = document.getElementById("contrasenia");
-	clave.addEventListener("focus", desenfocarFondo(), false);
+	user = document.getElementById('usuario');
+	console.log(user);
+	user.addEventListener("onblur", desenfocarFondo(), false);
+	clave = document.getElementById("contrasenia");
+	clave.addEventListener("onfocus", desenfocarFondo(), false);
+	console.log(clave);
 }
 
 function desenfocarFondo(){
 	console.log("desenfocando..");
-	var fondo = document.getElementById("cb-slideshow");
-	fondo.setAttibutte("style", "filter: blur(5px)");
+
+	if(user.focus()){
+		console.log("si");
+		var fondo = document.getElementById("cb-slideshow");
+		fondo.setAttribute("style", "-webkit-filter: blur(5px)");
+	}else{
+		console.log("no");
+
+	}
+	
 }
 
-window.addEventListener("load", inicio(), false);
+window.addEventListener("load", inicio, false);

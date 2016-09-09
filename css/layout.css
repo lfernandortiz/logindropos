@@ -110,11 +110,11 @@ input:focus::-o-input-placeholder {
 	font-weight: bolder;
 	color: #414040;
 	color: #FFFFFF;
-	text-shadow: 1px 1px 1px #6F6F6F;	
+	text-shadow: 2px 3px 8px #1C1C1C;	
 }
 
 .logoheader h1:hover{
-	text-shadow: 2px 3px 8px #1C1C1C;	
+	text-shadow: 2px 3px 14px #1C1C1C;	
 }
 
 .logoheader h5{
