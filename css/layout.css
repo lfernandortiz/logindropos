@@ -9,10 +9,6 @@
 	padding: 0;
 	margin: 0;
 }
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
-	margin:0;
-	padding:0;
-}
 
 body{
 	font-size: 16px;
@@ -123,10 +119,11 @@ input:focus::-o-input-placeholder {
 	color: #363636;
 	color: #EDEDED;
 	font-weight: bold;
+	text-shadow: 1px 2px 6px #2E2E2E;
 }
 
 .logoheader h5:hover{
-	text-shadow: 1px 2px 6px #2E2E2E;	
+	text-shadow: 1px 2px 7px #2E2E2E;	
 	/*font-weight: bold;*/
 }
 
@@ -235,9 +232,11 @@ input:focus::-o-input-placeholder {
 	margin-bottom: 20px;
 }
 
+
 .button:hover{
 	background: #0054FF; 
 }
+
 
 .olvidocontrasena{
 	font-size: .9rem;
@@ -278,7 +277,7 @@ input:focus::-o-input-placeholder {
 
 
 .footer a:hover{
-	color: #FF0014;
+	color: #FF0000;
 	font-weight: bold;
 	text-shadow: 1px 1px 2px black;
 }
@@ -590,7 +589,8 @@ input:focus::-o-input-placeholder {
 	}
 
 	.logoheader h1{
-		font-size: 2.5rem;			
+		font-size: 2.5rem;	
+		text-shadow: 1px 2px 4px rgba(28, 28, 28, .6);	
 	}
 
 	.logoheader h5{

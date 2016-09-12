@@ -16,7 +16,7 @@ function inicio(){
 }
 
 
-//Aplica desenfoque al fondo aletorio de imagenes
+//Aplica desenfoque al fondo  de imagenes
 function desenfocarFondo(){
 	var fondo = document.getElementById("cb-slideshow");
 	var evento = window.event.target.id;
